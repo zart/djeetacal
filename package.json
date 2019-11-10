@@ -7,7 +7,27 @@
     "build": "parcel build src/index.pug src/favicon.ico --public-url ./ --detailed-report",
     "serve": "parcel serve src/index.pug src/favicon.ico --port 3000 --log-level 3"
   },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
   "devDependencies": {
+    "eslint": "^6.6.0",
     "parcel": "^1.12.4",
     "parcel-plugin-clean-dist": "0.0.6",
     "pug": "^2.0.4",
