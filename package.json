@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/index.pug src/favicon.ico --public-url ./ --detailed-report",
-    "serve": "parcel serve src/index.pug src/favicon.ico --port 3000 --log-level 3"
+    "serve": "parcel serve src/index.pug src/favicon.ico --port 3000 --log-level 3",
+    "test": "jest"
   },
   "babel": {
     "presets": [
