@@ -1,0 +1,10 @@
+# temp files
+*~
+*.bak
+*.log
+
+# node
+.cache/
+node_modules/
+bower_components/
+dist/
